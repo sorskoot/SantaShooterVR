@@ -1,0 +1,7 @@
+/c0dr.crt
+/c0dr.key
+/c0dr.pem
+/dist
+/node_modules
+
+**/*.mp3
