@@ -1,4 +1,9 @@
 import './classes/components/shoot-controls.component';
 import './classes/components/game.component';
 import './classes/components/fire.component';
-import './classes/components/missile.component';
+import './classes/components/projectile.component';
+import './classes/components/keyboardcontrols.component';
+import './classes/components/reindeer-spawner.component';
+import './classes/components/reindeer.component';
+import './classes/components/explosion.component';
+import './classes/components/selfdestruct.component';

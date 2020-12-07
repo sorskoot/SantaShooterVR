@@ -8,7 +8,7 @@ AFRAME.registerComponent('game', {
     spawnMissile: function (direction, position) {
         let ball = document.createElement('a-entity');
         ball.setAttribute('mixin','xmas-ball');
-        ball.setAttribute("missile", { direction: direction, position: position });
+        ball.setAttribute("projectile", { direction: direction, position: position });
         this.missilegroup.appendChild(ball);
     }
 });
