@@ -23,7 +23,7 @@ AFRAME.registerComponent('projectile', {
         this.missilegroup = document.getElementById('missile-group');
         this.vY = this.data.speed;
         this.vXZ = this.data.speed;
-        //raycaster="far:.1;objects: .touchable;showLine:true"
+        // raycaster="far:.1;objects: .touchable;showLine:true"
         this.el.setAttribute("raycaster","far:2;showLine:false;objects:.enemy");
         this.el.addEventListener('raycaster-intersection', (e)=>{
             let elm = e.detail.els[0];
@@ -34,8 +34,11 @@ AFRAME.registerComponent('projectile', {
             elm.remove();
         });
     },
-
+    // Test    
     tick: function (time, timeDelta) {
+        /**
+         * sdasdasda
+         */
         let pos = this.el.object3D.position;      
         this.el.object3D.lookAt(new THREE.Vector3(this.data.direction.x,this.data.direction.y,this.data.direction.z));
         pos.x -= this.data.direction.x * this.vXZ * (timeDelta / 1000);

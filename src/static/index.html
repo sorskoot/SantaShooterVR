@@ -14,11 +14,10 @@
     <a-scene background="color:#888888" game>
         <a-assets>
             <a-asset-item id="scene" src="./models/scene.gltf"></a-asset-item>
-            <a-asset-item id="reindeer-obj" src="./models/deer_obj/deer.obj"></a-asset-item>
-            <a-asset-item id="reindeer-mtl" src="./models/deer_obj/deer.mtl"></a-asset-item>
+            <a-asset-item id="reindeer" src="./models/deer.glb"></a-asset-item>            
             <a-asset-item id="candyCane" src="./models/candyCane.glb"></a-asset-item>
             <a-mixin id="xmas-ball" geometry="primitive: sphere; radius:.1"></a-mixin>
-            <a-mixin id="reindeer-model" rotation="20 270 0" scale=".01 .01 .01" obj-model="obj:#reindeer-obj;mtl:#reindeer-mtl"></a-mixin>
+            <a-mixin id="reindeer-model" rotation="20 270 0" gltf-model="#reindeer"></a-mixin>
         </a-assets>
 
         <a-entity position="0 0 -14" rotation="0 270 0" gltf-model="#scene" animation-mixer></a-entity>
@@ -32,10 +31,10 @@
         <a-entity id="reindeer-group">
         </a-entity>
         <a-entity fire shoot-controls="hand:right;model:false">
-            <a-entity gltf-model="#candyCane" rotation="0 -90 -90" position="-0.18 0 -.18"> </a-entity>
+            <a-entity gltf-model="#candyCane" rotation="0 -90 -90" position="0 0 -.18"> </a-entity>
         </a-entity>
         <a-entity fire shoot-controls="hand:left;model:false">
-            <a-entity gltf-model="#candyCane" rotation="0 -90 -90" position="-0.18 0 -.18"> </a-entity>
+            <a-entity gltf-model="#candyCane" rotation="0 -90 -90" position="0 0 -.18"> </a-entity>
         </a-entity>
         <a-entity camera position="0 1.6 0" look-controls></a-entity>
     </a-scene>

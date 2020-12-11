@@ -4,8 +4,9 @@
 
 ## Twitch
 Big thanks to all the supporters on [Twitch](https://twitch.tv/sorskoot). Special thanks to our subscribers and sub gifters during the build of this game:
-- [TheNerdyHamster](https://github.com/TheNerdyHamster) subscribing, gifting 4 subs
-- [ErokeTV](https://github.com/eroke) giving a sub
+- [TheNerdyHamster](https://github.com/TheNerdyHamster) subscribing and gifting 5 subs
+- [ErokeTV](https://github.com/eroke) gifting a sub
+- [wbw72](https://twitch.tv/Wbw72) subscribing
 
 ## Other credits
 Model Credits:
